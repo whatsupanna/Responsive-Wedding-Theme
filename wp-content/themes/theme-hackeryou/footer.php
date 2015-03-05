@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p class='copyRight'>&copy; WoMannah - it's like woman <?php echo date('Y'); ?></p>
+    <p class='copyRight'>&copy; WoMannah - it's like woman <?php echo date('Y'); ?> Premium WordPress by <span>Coffeecream Themes</span></p>
   </div>
 </footer>
 
@@ -12,6 +12,10 @@
  s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
 
+
 <?php wp_footer(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/slick-1.4.1/slick/slick.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/jquery.countdown-2.0.4/jquery.countdown.js"></script>
+
 </body>
 </html>
