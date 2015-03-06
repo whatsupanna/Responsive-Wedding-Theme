@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+   <link rel="stylesheet" href="<?php bloginfo( 'template_directory') ?>/animate.css">
   <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Cookie' rel='stylesheet' type='text/css'>
 
   <?php // Load our CSS ?>
@@ -43,6 +44,11 @@
 
 
 
+    <div class="clockBox">
+      <div id="clock"></div>
+    </div>
+
+
   <div class="container headerBox clearfix">
   <div class="logoHead">
       <h1>
@@ -52,8 +58,7 @@
       </h1>
   </div>
 
-   <div id="clock"></div>
-  
+
  
 
 <?php } ?> <!-- close is home if -->
