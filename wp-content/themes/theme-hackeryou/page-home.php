@@ -18,7 +18,7 @@
 	 </p>
 </div>
 <div class="aboutUs">
-	<div class="box box1">
+	<div class="box box1 hidden">
 		<div class="aboutPicBox">
 			<span class="thing">Hello world</span>
 			<img class="aboutPics" src="wp-content/uploads/2015/03/aboutGord.jpg" alt="">
@@ -35,7 +35,7 @@
 
 
 	</div>
-	<div class="box box2">
+	<div class="box box2 hidden">
 		<div class="aboutPicBox">
 			<img class="aboutPics" src="wp-content/uploads/2015/03/aboutSarah.jpg" alt="">
 		</div>

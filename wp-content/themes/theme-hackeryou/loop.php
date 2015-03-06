@@ -20,8 +20,8 @@
 		
 		<div class="blogHeader">
 	        <p class="blogTag blogTag1"><?php the_title(); ?></p>
-			<p class="blogTag blogTag2"><?php echo get_the_date(); ?></p>
-			<p class="blogTag blogTag"><?php the_category(); ?></p>
+			<p class="blogTag blogTag2"><i class="fa fa-calendar"></i><?php echo get_the_date(); ?></p>
+			<p class="blogTag blogTag3"><i class="fa fa-folder"></i><?php the_category(); ?></p>
 		</div>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -35,7 +35,10 @@
 
 			<section class="entry-content">
 				<div class="blogContent">
+				<div class="blogImage"><?php the_post_thumbnail(); ?></div>
+				<div class="blogExcerpt">
 					<?php the_excerpt(); ?>
+				</div>
 					<?php wp_link_pages( array(
 	          'before' => '<div class="page-link"> Pages:',
 	          'after' => '</div>'
@@ -44,10 +47,8 @@
         	<!-- end of blogContent -->
 			</section><!-- .entry-content -->
 
-			<footer>
-				<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-        <p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-        <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
+			<footer class="blogFooter">
+
 			</footer>
 
 		</article><!-- #post-## -->

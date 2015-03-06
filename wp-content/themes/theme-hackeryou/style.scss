@@ -500,7 +500,24 @@ p.form-allowed-tags, .nocomments { display:none; }
   width:40%;
   margin:5%;
   text-align: center;
+  transition:all 0.5s;
 }
+.box1 {
+  opacity: 0;
+  transform:translateX(-100%);
+}
+.box2 {
+  opacity: 0;
+  transform:translateX(100%);
+}
+
+  // Both!
+.box.visible {
+  opacity:1;
+  transform:translateX(0);
+}
+
+
 .aboutPics{
   border-radius: 50%;
   width:100%;
@@ -611,31 +628,85 @@ p.form-allowed-tags, .nocomments { display:none; }
                    Blog Index Style
    ========================================================================== */
 
+.blogFooter{
+  background: none;
+}
 .blogHeader{
-  background: red;
+  // background: red;
   color: pink;
   text-decoration: none;
-  float:right;
-
+  // float:right;
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  width:75%;
+    .post-categories{
+      color:green;
+    }
+    i.fa{
+    padding-right:10px;
+  }
 }
 .blogTag {
   font-size: 15px;
   text-decoration: none;
   color: pink;
 }
-.blogTag3 {
+.blogTag1 {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom:15px;
+}
+.blogTag3,.blogTag2 {
+  display: inline;
+  padding-right:20px;
+  color: lightgrey;
   text-decoration: none;
 }
 .post-categories{
   list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   a{
+    padding: 0;
     text-decoration: none;
+    color:lightgrey;
   }
 }
 .blogContent{
   background: blue;
-  .alignnone{
+  width:100%;
+  .blogImage{
+    width:23%;
     float:left;
-    width:35%;
+    margin-right:2%;
+    height:auto;
+    img{
+      width:100%;
+      height:auto;
+      border-radius: 4px;
+    }
+  }
+  .blogExcerpt{
+    width:75%;
+    float:left;
+    margin:0;
+    color:grey;
+    a{
+      padding:10px;
+      margin-top:15px;
+      background: pink;
+      display: block;
+      text-decoration: none;
+      color:white;
+      text-transform: uppercase;
+      font-weight: 700;
+      width:30%;
+    }
   }
 }
+  i.fa-calendar{
+    padding-right: 10px;
+  }
