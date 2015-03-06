@@ -49,19 +49,17 @@
     </div>
 
 
-  <div class="container headerBox clearfix">
-  <div class="logoHead">
-      <h1>
-        <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-          <?php bloginfo( 'name' ); ?>
-        </a>
-      </h1>
-  </div>
-
-
- 
-
 <?php } ?> <!-- close is home if -->
+
+
+    <div class="container headerBox clearfix">
+    <div class="logoHead">
+        <h1>
+          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+            <?php bloginfo( 'name' ); ?>
+          </a>
+        </h1>
+    </div>
     <!-- end of logoHead -->
     <nav class='nav'>
       <?php wp_nav_menu( array(

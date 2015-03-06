@@ -5,10 +5,25 @@
   <div class="container">
 
     <div class="content">
+    		<h2 class="aboutTag">Blog</h2>
+    		 <div class="headerLine">
+    			 <p class="heartBox">
+    			        <span class="linePink line1"></span>
+    			        <i class="fa fa-heart aboutHeart"></i>
+    			        <span class="linePink line2"></span>
+    			 </p>
+    		</div>
+    	
     		<?php get_template_part( 'loop', 'index' );	?>
+
+
+
+    		
     </div> <!--/.content -->
 
-    <?php get_sidebar(); ?>
+
+
+
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

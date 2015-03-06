@@ -16,19 +16,32 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+	
+		
+		<div class="blogHeader">
+	        <p class="blogTag blogTag1"><?php the_title(); ?></p>
+			<p class="blogTag blogTag2"><?php echo get_the_date(); ?></p>
+			<p class="blogTag blogTag"><?php the_category(); ?></p>
+		</div>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 			<h2 class="entry-title">
         <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          <?php the_title(); ?>
+       
         </a>
+
       </h2>
 
+
 			<section class="entry-content">
-				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
-				<?php wp_link_pages( array(
-          'before' => '<div class="page-link"> Pages:',
-          'after' => '</div>'
-        )); ?>
+				<div class="blogContent">
+					<?php the_excerpt(); ?>
+					<?php wp_link_pages( array(
+	          'before' => '<div class="page-link"> Pages:',
+	          'after' => '</div>'
+	        )); ?>
+        	</div>
+        	<!-- end of blogContent -->
 			</section><!-- .entry-content -->
 
 			<footer>

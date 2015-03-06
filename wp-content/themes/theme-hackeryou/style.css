@@ -181,19 +181,18 @@ body {
   background: #D6516D; }
 
 .content {
-  float: left;
-  width: 65%;
-  margin-right: 5%; }
+  width: 80%;
+  margin: 0 auto; }
 
 .full {
   width: 100%; }
 
 /* links */
-a {
+.button {
   color: white;
   text-decoration: none; }
 
-a:hover {
+.button:hover {
   color: #D424B1; }
 
 /* paragraphs */
@@ -704,3 +703,31 @@ p.form-allowed-tags, .nocomments {
 
 .readMore {
   padding-bottom: 2.5%; }
+
+/* =============================================================================
+                   Blog Index Style
+   ========================================================================== */
+.blogHeader {
+  background: red;
+  color: pink;
+  text-decoration: none;
+  float: right; }
+
+.blogTag {
+  font-size: 15px;
+  text-decoration: none;
+  color: pink; }
+
+.blogTag3 {
+  text-decoration: none; }
+
+.post-categories {
+  list-style: none; }
+  .post-categories a {
+    text-decoration: none; }
+
+.blogContent {
+  background: blue; }
+  .blogContent .alignnone {
+    float: left;
+    width: 35%; }
