@@ -10,9 +10,9 @@ $(function(){
      var $this = $(this).html(event.strftime(''
        + '<div class="clockDetails"> <span class="detailNumber">%-m</span><span class="detailLabel"> months</span></div>'
        + '<div class="clockDetails"> <span class="detailNumber">%-d</span><span class="detailLabel"> days</span></div>'
-       + '<div class="clockDetails"> <span class="detailNumber">%-H</span><span class="detailLabel"> hr</span></div>'
-       + '<div class="clockDetails"> <span class="detailNumber">%-M</span><span class="detailLabel"> min</span></div>'
-       + '<div class="clockDetails"> <span class="detailNumber">%-S</span><span class="detailLabel"> sec</span></div>'));
+       + '<div class="clockDetails"> <span class="detailNumber">%-H</span><span class="detailLabel"> hours</span></div>'
+       + '<div class="clockDetails"> <span class="detailNumber">%-M</span><span class="detailLabel"> minutes</span></div>'
+       + '<div class="clockDetails"> <span class="detailNumber">%-S</span><span class="detailLabel"> seconds</span></div>'));
    });
 
 
@@ -31,19 +31,21 @@ $(function(){
   $(window).on('scroll',function() {
 
 
-  	$('.box').each(function() {
+  	$('.animate').each(function() {
   		// cache the current box
   		var $el = $(this);
 	  	if(isScrolledIntoView($el)) {
 	  		$el.addClass('visible').fadeIn(200);
 	  	}
+
   	});
+
+
+
 
   });
 
   function initialize() {
-
-
   			  
   			  // Create an array of styles.
   			  var styles = [

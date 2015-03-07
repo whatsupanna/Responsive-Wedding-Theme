@@ -7,7 +7,7 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
    <link rel="stylesheet" href="<?php bloginfo( 'template_directory') ?>/animate.css">
-  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Cookie' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:400,800|Cookie' rel='stylesheet' type='text/css'>
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />

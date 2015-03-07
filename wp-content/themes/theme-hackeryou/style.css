@@ -225,9 +225,6 @@ dd {
   margin-left: 10px; }
 
 /*lists*/
-ul li, ol li {
-  padding: 3px; }
-
 /*PRE*/
 pre {
   background: #F7F7F7;
@@ -275,6 +272,11 @@ footer {
   padding: 0;
   margin: 0 5%;
   color: white; }
+  .logoHead a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 300; }
 
 .heroImage {
   font-size: 0;
@@ -309,6 +311,9 @@ footer {
 
 .dateTag {
   letter-spacing: 11px; }
+
+.profileName {
+  font-family: 'Open Sans', sans-serif; }
 
 i.fa {
   font-size: 20px;
@@ -375,9 +380,10 @@ i.aboutHeart {
   border: 10px solid 0, 0, 0, 0.2;
   z-index: 99999;
   color: #333333;
-  font-weight: 700;
-  margin-right: 4%;
-  width: 16%; }
+  font-weight: 900;
+  margin-right: 2%;
+  width: 15%;
+  font-family: 'Open Sans', sans-serif; }
   .clockDetails span {
     display: block; }
 
@@ -387,12 +393,12 @@ i.aboutHeart {
   padding: 15px;
   display: inline-block;
   background: white;
-  font-weight: 700; }
+  font-weight: 800; }
 
 .detailLabel {
   background: white;
   font-size: 15px;
-  color: red;
+  color: #C4274D;
   position: relative;
   padding: 10px;
   text-align: center;
@@ -412,18 +418,19 @@ ul.menu {
   margin: 0;
   padding: 0; }
   ul.menu li:hover {
-    background: #C4274D; }
+    background: #C4274D;
+    padding: 30px 0; }
 
 ul.menu li {
   display: inline;
-  margin-right: 10px;
   background: #D6516D;
   text-transform: uppercase; }
 
 ul.menu li a {
   color: #333;
   padding: 30px;
-  color: white; }
+  color: white;
+  text-decoration: none; }
 
 /* =============================================================================
                    Comment Styling
@@ -622,7 +629,19 @@ p.form-allowed-tags, .nocomments {
   opacity: 0;
   transform: translateX(100%); }
 
-.box.visible {
+.block1 {
+  opacity: 0;
+  transform: translateX(-100%); }
+
+.block2 {
+  opacity: 0;
+  transform: translateY(10%); }
+
+.block3 {
+  opacity: 0;
+  transform: translateX(100%); }
+
+.animate.visible {
   opacity: 1;
   transform: translateX(0); }
 
@@ -692,7 +711,8 @@ p.form-allowed-tags, .nocomments {
     color: #C4274D;
     font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif; }
 
 .storyPics {
   border-radius: 50%; }
@@ -701,7 +721,8 @@ p.form-allowed-tags, .nocomments {
   float: left;
   width: 30%;
   margin: 1.5%;
-  padding-top: 2%; }
+  padding-top: 2%;
+  transition: all 0.5s; }
 
 .button {
   background: #C4274D;
@@ -712,7 +733,8 @@ p.form-allowed-tags, .nocomments {
   margin: 0 auto;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif; }
 
 .readMore {
   padding-bottom: 2.5%; }
@@ -780,7 +802,8 @@ p.form-allowed-tags, .nocomments {
     width: 65%;
     float: left;
     margin: 0;
-    color: grey; }
+    color: grey;
+    font-size: 14px; }
     .blogContent .blogExcerpt a {
       padding: 10px;
       margin-top: 15px;
@@ -792,7 +815,8 @@ p.form-allowed-tags, .nocomments {
       font-weight: 700;
       width: 25%;
       border-radius: 5px;
-      text-align: center; }
+      text-align: center;
+      font-family: 'Open Sans', sans-serif; }
 
 i.fa-calendar {
   padding-right: 10px; }
@@ -800,7 +824,8 @@ i.fa-calendar {
 .dateTitle {
   color: #C4274D;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif; }
 
 /* =============================================================================
                    Form Style
