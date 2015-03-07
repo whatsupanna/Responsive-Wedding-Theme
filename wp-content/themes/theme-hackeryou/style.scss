@@ -640,22 +640,25 @@ p.form-allowed-tags, .nocomments { display:none; }
   padding: 0;
   display: inline-block;
   float: right;
-  width:75%;
+  width:64%;
     .post-categories{
       color:green;
     }
     i.fa{
     padding-right:10px;
+    padding-bottom: 
   }
 }
 .blogTag {
   font-size: 15px;
   text-decoration: none;
-  color: pink;
+  color: #212121;
 }
 .blogTag1 {
   border-bottom: 1px solid lightgrey;
   padding-bottom:15px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .blogTag3,.blogTag2 {
   display: inline;
@@ -679,7 +682,7 @@ p.form-allowed-tags, .nocomments { display:none; }
   background: blue;
   width:100%;
   .blogImage{
-    width:23%;
+    width:33%;
     float:left;
     margin-right:2%;
     height:auto;
@@ -690,23 +693,228 @@ p.form-allowed-tags, .nocomments { display:none; }
     }
   }
   .blogExcerpt{
-    width:75%;
+    width:65%;
     float:left;
     margin:0;
     color:grey;
     a{
       padding:10px;
       margin-top:15px;
-      background: pink;
+      background: #C4274D;
       display: block;
       text-decoration: none;
       color:white;
       text-transform: uppercase;
       font-weight: 700;
-      width:30%;
+      width:25%;
+      border-radius: 5px;
+      text-align: center;
     }
   }
 }
   i.fa-calendar{
     padding-right: 10px;
   }
+  .dateTitle{
+    color:#C4274D;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+
+  /* =============================================================================
+                   Form Style
+   ========================================================================== */
+label {
+  text-align: center;
+  padding:10px 0;
+}
+.mapContent{
+  position: relative;
+}
+.rsvp{
+  background: #C4274D;
+  display: inline-block;
+  border-radius: 10px;
+  position: absolute;
+  left:60%;
+  top:10%;
+  width:30%;
+}
+#map-canvas{
+  max-width: 100%;
+  height: 600px;
+}
+input[type='text']{
+  padding:10px;
+  border-radius: 5px;
+  border:none;
+  width:100%;
+}
+input[type='email']{
+  padding:10px;
+  border-radius: 5px;
+  border:none;
+  width:100%;
+}
+.rsvpText{
+  margin:0 auto;
+  display: block;
+}
+.rsvpList {
+  margin:0 auto;
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+.formBox{
+  margin:0 auto;
+  padding:50px 60px;
+  padding-top:0;
+}
+.guestGroup {
+  width:49%;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+label.guest {
+  display: block;
+  text-align: center;
+}
+.attendingGroup {
+  width: 49%;
+  display: inline-block;
+  margin: 0;
+  // position: relative;
+}
+label.attending {
+  display: block;
+  text-align: center;
+}
+select.rsvpList{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white;
+  color:#565A5C;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0;
+  font-weight: 300;
+  width:100%;
+  padding:8px;
+}
+// .guestGroup:before{
+//     content: '▲';
+//     display: block;
+//     position: absolute;
+//     right: 8px;
+//     top: 0;
+//     transform: translateY(-50%);
+//     color:black;
+// }
+// .guestGroup:after{
+//     content: '▼';
+//     display: block;
+//     position: absolute;
+//     right: 8px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     color:black;
+// }
+// .attendingGroup:before{
+//     content: '▲';
+//     display: block;
+//     position: absolute;
+//     right: 8px;
+//     top: 0;
+//     transform: translateY(-50%);
+//     color:black;
+// }
+// .attendingGroup:after{
+//     content: '▼';
+//     display: block;
+//     position: absolute;
+//     right: 8px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     color:black;
+// }
+
+input[type="submit"]{
+  background: #212121;
+  border-radius: 5px;
+  padding:10px;
+  color:white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+  border:1px solid #212121;
+}
+
+i.aboutHeartForm{
+  text-align: center;
+  font-size: 15px;
+  color:white;
+}
+.lineWhite{
+  border-bottom:1px solid white;
+  width:40%;
+  margin-top: 15%;
+
+}
+.heartBoxForm{
+  text-align: center;
+  margin:0 auto;
+  padding:0;
+  width:80%;
+}
+
+  /* =============================================================================
+                   Single Page Styles
+   ========================================================================== */
+
+.singleHeader{
+  display: inline-block;
+  width:100%;
+  text-align: center;
+  padding-top:50px;
+}
+.singleText{
+  padding:0;
+  margin:0;
+}
+.nav-previous{
+   padding:10px;
+      margin-top:15px;
+      background: #C4274D;
+      display: block;
+      text-decoration: none;
+      color:white;
+      text-transform: uppercase;
+      font-weight: 700;
+      width:25%;
+      border-radius: 5px;
+      text-align: center;
+    a {
+      color:white;
+      text-decoration: none;
+    }
+}
+.nav-next{
+   padding:10px;
+      margin-top:15px;
+      background: #C4274D;
+      display: block;
+      text-decoration: none;
+      color:white;
+      text-transform: uppercase;
+      font-weight: 700;
+      width:25%;
+      border-radius: 5px;
+      text-align: center;
+}

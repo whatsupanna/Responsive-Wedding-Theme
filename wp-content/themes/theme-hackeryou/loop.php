@@ -19,7 +19,9 @@
 	
 		
 		<div class="blogHeader">
-	        <p class="blogTag blogTag1"><?php the_title(); ?></p>
+	        <p class="blogTag blogTag1">
+	        <span class="dateTitle">July 7th 2014</span>
+	        <?php the_title(); ?></p>
 			<p class="blogTag blogTag2"><i class="fa fa-calendar"></i><?php echo get_the_date(); ?></p>
 			<p class="blogTag blogTag3"><i class="fa fa-folder"></i><?php the_category(); ?></p>
 		</div>
@@ -35,9 +37,13 @@
 
 			<section class="entry-content">
 				<div class="blogContent">
-				<div class="blogImage"><?php the_post_thumbnail(); ?></div>
+				<div class="blogImage">
+				<?php the_post_thumbnail('large'); ?>
+
+
+				</div>
 				<div class="blogExcerpt">
-					<?php the_excerpt(); ?>
+					<p class="blogExcerptText"><?php the_excerpt(); ?></p>
 				</div>
 					<?php wp_link_pages( array(
 	          'before' => '<div class="page-link"> Pages:',

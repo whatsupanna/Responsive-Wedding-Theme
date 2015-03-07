@@ -14,6 +14,7 @@
 
 
 <?php wp_footer(); ?>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory') ?>/slick-1.4.1/slick/slick.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/jquery.countdown-2.0.4/jquery.countdown.js"></script>
 

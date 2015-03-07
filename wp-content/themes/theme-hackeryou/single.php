@@ -7,31 +7,37 @@
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
 
-          
-
-          <div class="entry-meta">
-            <?php hackeryou_posted_on(); ?>
-          </div><!-- .entry-meta -->
+          <h2 class="aboutTag"><?php the_title(); ?></h2>
+           <div class="headerLine">
+             <p class="heartBox">
+                    <span class="linePink line1"></span>
+                    <i class="fa fa-heart aboutHeart"></i>
+                    <span class="linePink line2"></span>
+             </p>
+          </div>
+          <div class="singleHeader">
+            <p class="blogTag blogTag2"><i class="fa fa-calendar"></i><?php echo get_the_date(); ?></p>
+            <p class="blogTag blogTag3"><i class="fa fa-folder"></i><?php the_category(); ?></p>
+          </div>
+        
 
           <div class="entry-content">
-            <?php the_content(); ?>
+            <p class="singleText"><?php the_content(); ?></p>
+
             <?php wp_link_pages(array(
               'before' => '<div class="page-link"> Pages: ',
               'after' => '</div>'
             )); ?>
           </div><!-- .entry-content -->
 
-          <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
-          </div><!-- .entry-utility -->
+         
         </div><!-- #post-## -->
 
         <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
+
+          <p class="nav-previous"><?php previous_post_link('%link', ' %title'); ?></p>
+          
         </div><!-- #nav-below -->
 
         <?php comments_template( '', true ); ?>
@@ -39,8 +45,6 @@
       <?php endwhile; // end of the loop. ?>
 
     </div> <!-- /.content -->
-
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

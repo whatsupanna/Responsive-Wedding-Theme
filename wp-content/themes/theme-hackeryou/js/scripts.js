@@ -39,9 +39,112 @@ $(function(){
 	  	}
   	});
 
-
-
   });
+
+  function initialize() {
+
+
+  			  
+  			  // Create an array of styles.
+  			  var styles = [
+  			    {
+  			      featureType: "road.highway",
+  			      elementType: "geometry.fill",
+  			      stylers: [
+  			        { color: "#ccc" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "road.highway",
+  			      elementType: "geometry.stroke",
+  			      stylers: [
+  			        { color: "#ccc" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "road.arterial",
+  			      elementType: "geometry.fill",
+  			      stylers: [
+  			        { color: "#ccc" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "road.arterial",
+  			      elementType: "geometry.stroke",
+  			      stylers: [
+  			        { color: "#C4274D" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "road.local",
+  			      elementType: "geometry.stroke",
+  			      stylers: [
+  			        { color: "#D6516D" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "road.local",
+  			      elementType: "geometry.fill",
+  			      stylers: [
+  			        { color: "#F4FBFF" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "road.local",
+  			      elementType: "labels.text.fill",
+  			      stylers: [
+  			        { color: "#C4274D" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "road.local",
+  			      elementType: "labels.text.stroke",
+  			      stylers: [
+  			        { color: "#F4FBFF" }
+  			      ]
+  			    },
+  			    {
+  			      featureType: "landscape.natural",
+  			      elementType: "geometry",
+  			      stylers: [
+  			      	{ color: "#EEEEEE"}
+  			      ]
+  			    },
+  			    {
+  			      featureType: "poi",
+  			      elementType: "geometry",
+  			      stylers: [
+  			      	{ color: "#D4D4D2"}
+  			      ]
+  			    }
+  			  ];
+  			  var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+
+  			  var mapCanvas = document.getElementById('map-canvas');
+  			  var mapOptions = {
+  			    center: new google.maps.LatLng(40.711720, -74.000889),
+  			    zoom: 17,
+  			    mapTypeId: google.maps.MapTypeId.ROADMAP
+  			  }
+  			  var map = new google.maps.Map(mapCanvas, mapOptions)
+
+  			  var marker = new google.maps.Marker({
+  			     position: map.getCenter(),
+  			     draggable: true,
+  			     map: map
+  			   });
+
+  
+
+
+  			  // attach the styles to the map
+  			  map.mapTypes.set('map_style', styledMap);
+  			  map.setMapTypeId('map_style');
+
+
+  			}
+  			google.maps.event.addDomListener(window, 'load', initialize);
+  	
 
 
 
