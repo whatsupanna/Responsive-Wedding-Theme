@@ -316,8 +316,7 @@ footer {
   font-family: 'Open Sans', sans-serif; }
 
 i.fa {
-  font-size: 20px;
-  padding-bottom: 3%; }
+  font-size: 20px; }
 
 /* =============================================================================
                    Hero Text Styles
@@ -363,13 +362,13 @@ i.aboutHeart {
    ========================================================================== */
 .clockBox {
   position: relative;
-  background: red; }
+  background: red;
+  width: 100%; }
 
 #clock {
   color: white;
   display: inline-block;
   position: absolute;
-  /*positioning first based on broswer and then use transform translateY and X to move it 50% of itself*/
   bottom: 200px;
   width: 50%;
   left: 27.5%;
@@ -389,7 +388,7 @@ i.aboutHeart {
 
 .detailNumber {
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   padding: 15px;
   display: inline-block;
   background: white;
@@ -439,7 +438,7 @@ ul.menu li a {
   padding: 0 0 18px; }
 
 h3#comments-title, h3#reply-title {
-  color: #000000;
+  color: white;
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 0; }
@@ -477,7 +476,7 @@ h3#comments-title {
   left: 0; }
 
 .comment-author cite {
-  color: #000000;
+  color: white;
   font-style: normal;
   font-weight: 700; }
 
@@ -541,7 +540,8 @@ input[type=submit] {
   margin: 0 48px 0 0; }
 
 h3#reply-title {
-  margin: 18px 0; }
+  margin: 18px 0;
+  text-align: center; }
 
 #comments-list #respond {
   margin: 0 0 18px; }
@@ -825,7 +825,15 @@ i.fa-calendar {
   color: #C4274D;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px; }
+
+.blogTitle {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1.5px; }
+  .blogTitle a {
+    text-decoration: none;
+    color: black; }
 
 /* =============================================================================
                    Form Style
@@ -979,3 +987,10 @@ i.aboutHeartForm {
   width: 25%;
   border-radius: 5px;
   text-align: center; }
+
+/* =============================================================================
+                   Media Queries
+   ========================================================================== */
+@media (max-width: 1000px) {
+  #clock {
+    margin: 0 auto; } }

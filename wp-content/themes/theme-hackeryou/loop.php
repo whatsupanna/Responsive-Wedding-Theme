@@ -21,7 +21,7 @@
 		<div class="blogHeader">
 	        <p class="blogTag blogTag1">
 	        <span class="dateTitle">July 7th 2014</span>
-	        <?php the_title(); ?></p>
+	        <a class="blogTitle" href="<?php the_permalink(); ?>"><?php echo get_the_title();?></a></p>
 			<p class="blogTag blogTag2"><i class="fa fa-calendar"></i><?php echo get_the_date(); ?></p>
 			<p class="blogTag blogTag3"><i class="fa fa-folder"></i><?php the_category(); ?></p>
 		</div>
