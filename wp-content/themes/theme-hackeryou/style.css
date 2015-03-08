@@ -225,7 +225,6 @@ dd {
   padding: 10px;
   margin-left: 10px; }
 
-/*lists*/
 /*PRE*/
 pre {
   background: #F7F7F7;
@@ -1012,9 +1011,9 @@ i.aboutHeartForm {
   border-radius: 5px;
   text-align: center; }
 
-/* =============================================================================
-                   Media Queries
-   ========================================================================== */
-@media (max-width: 1000px) {
+@media (max-width: 1058px) {
   #clock {
-    margin: 0 auto; } }
+    width: 100%;
+    left: 10%; }
+  .heroText {
+    top: 30%; } }

@@ -111,10 +111,6 @@ dd {
   margin-left: 10px;
 }
 
-/*lists*/
-// ul li,ol li {
-//   padding:3px;
-// }
 
 /*PRE*/
 
@@ -977,14 +973,8 @@ i.aboutHeartForm{
       text-align: center;
 }
 
+// Media queries 
 
-/* =============================================================================
-                   Media Queries
-   ========================================================================== */
+@import 'mq';
 
-@media (max-width: 1000px){
-  #clock{
-    margin:0 auto;
-  }
 
-}

@@ -25,7 +25,7 @@
   <!-- hero images -->
   <?php if(is_front_page()) { ?>
     <div class="heroImages">
-      <img class="background-slideshow image1" src="<?= get_field('image_1')['url'];?>" alt="">
+      <img class="background-slideshow image5" src="<?= get_field('image_5')['url'];?>" alt="">
       <img class="background-slideshow image2" src="<?= get_field('image_2')['url'];?>" alt="">
       <img class="background-slideshow image3" src="<?= get_field('image_3')['url'];?>" alt="">
       <img class="background-slideshow image4" src="<?= get_field('image_4')['url'];?>" alt="">      
