@@ -32,7 +32,7 @@
     </div>
 
     <div class="heroText">
-      <h2 class="bigTag">Anna & Hannah</h2>
+      <h2 class="bigTag">Sarah & Jake</h2>
       <p class="secondTag">Are Getting Married</p>
       <p class="heartBox">
         <span class="line line1"></span>

@@ -1,6 +1,7 @@
 <footer>
   <div class="container">
     <p class='copyRight'>&copy; WoMannah - it's like woman <?php echo date('Y'); ?> Premium WordPress by <span>Coffeecream Themes</span></p>
+    <p class="sign">Made with <i class="fa fa-heart"></i> by Hannah and Anna</p>
   </div>
 </footer>
 

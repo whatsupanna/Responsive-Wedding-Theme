@@ -170,7 +170,8 @@ img.alignright {
                    Default Styling
    ========================================================================== */
 body {
-  font-family: 'PT Serif', serif; }
+  font-family: 'PT Serif', serif;
+  overflow-x: hidden; }
 
 .container {
   margin: 0 auto;
@@ -255,6 +256,9 @@ footer {
   padding: 20px; }
   footer span {
     color: #D6516D; }
+  footer .sign {
+    color: #ccc;
+    text-align: center; }
 
 .copyRight {
   color: grey;
@@ -371,7 +375,7 @@ i.aboutHeart {
   position: absolute;
   bottom: 200px;
   width: 50%;
-  left: 27.5%;
+  left: 29%;
   z-index: 999; }
 
 .clockDetails {
@@ -715,7 +719,18 @@ p.form-allowed-tags, .nocomments {
     font-family: 'Open Sans', sans-serif; }
 
 .storyPics {
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 0.5s; }
+
+.storyPics:hover {
+  opacity: 0.5; }
+
+.aboutStoryBox {
+  background: #C4274D;
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto; }
 
 .block {
   float: left;
@@ -738,6 +753,9 @@ p.form-allowed-tags, .nocomments {
 
 .readMore {
   padding-bottom: 2.5%; }
+  .readMore a:hover {
+    color: white;
+    background: #D6516D; }
 
 /* =============================================================================
                    Blog Index Style
@@ -753,6 +771,9 @@ p.form-allowed-tags, .nocomments {
   display: inline-block;
   float: right;
   width: 64%; }
+  .blogHeader a {
+    text-decoration: none;
+    color: black; }
   .blogHeader .post-categories {
     color: green; }
   .blogHeader i.fa {
@@ -817,6 +838,8 @@ p.form-allowed-tags, .nocomments {
       border-radius: 5px;
       text-align: center;
       font-family: 'Open Sans', sans-serif; }
+    .blogContent .blogExcerpt a:hover {
+      background: #D6516D; }
 
 i.fa-calendar {
   padding-right: 10px; }
@@ -961,7 +984,8 @@ i.aboutHeartForm {
 
 .nav-previous {
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 70px;
   background: #C4274D;
   display: block;
   text-decoration: none;

@@ -44,6 +44,7 @@ img.alignright    { padding-left: 5px; }
 
 body {
   font-family: 'PT Serif', serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -151,6 +152,10 @@ footer {
   padding:20px;
   span{
     color:#D6516D;
+  }
+  .sign{
+    color:#ccc;
+    text-align: center;
   }
 }
 .copyRight{
@@ -277,7 +282,7 @@ i.aboutHeart{
   position: absolute;
   bottom:200px;
   width:50%;
-  left:27.5%;
+  left:29%;
   z-index: 999;
 }
 
@@ -313,11 +318,7 @@ i.aboutHeart{
   text-align: center;
   text-transform: uppercase;
 }
-// .days{
-//   background: white;
-//   font-size: 20px;
-//   // padding:20px;
-// }
+
 
 
 
@@ -623,6 +624,17 @@ p.form-allowed-tags, .nocomments { display:none; }
 }
 .storyPics{
   border-radius: 50%;
+  transition:all 0.5s;
+}
+.storyPics:hover{
+  opacity: 0.5;
+}
+.aboutStoryBox{
+  background: #C4274D;
+  width:300px;
+  border-radius: 50%;
+  position: relative;
+  margin:0 auto;
 }
 .block{
   float:left;
@@ -647,6 +659,10 @@ p.form-allowed-tags, .nocomments { display:none; }
 
 .readMore{
   padding-bottom:2.5%;
+  a:hover{
+    color:white;
+    background: #D6516D;
+  }
 }
 
 /* =============================================================================
@@ -657,10 +673,12 @@ p.form-allowed-tags, .nocomments { display:none; }
   background: none;
 }
 .blogHeader{
-  // background: red;
   color: pink;
   text-decoration: none;
-  // float:right;
+    a{
+      text-decoration: none;
+      color:black;
+    }
   margin:0;
   padding: 0;
   display: inline-block;
@@ -736,6 +754,9 @@ p.form-allowed-tags, .nocomments { display:none; }
       border-radius: 5px;
       text-align: center;
       font-family: 'Open Sans', sans-serif;
+    }
+    a:hover{
+      background: #D6516D;
     }
   }
 }
@@ -926,7 +947,8 @@ i.aboutHeartForm{
 }
 .nav-previous{
    padding:10px;
-      margin-top:15px;
+      margin-top:25px;
+      margin-bottom: 70px;
       background: #C4274D;
       display: block;
       text-decoration: none;
