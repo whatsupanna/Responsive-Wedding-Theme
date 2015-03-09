@@ -111,6 +111,10 @@ dd {
   margin-left: 10px;
 }
 
+/*lists*/
+// ul li,ol li {
+//   padding:3px;
+// }
 
 /*PRE*/
 
@@ -328,6 +332,7 @@ i.aboutHeart{
     float:left;
     background: #D6516D;
     padding:30px 0;
+
   }
   ul.menu {
     margin:0;
@@ -860,42 +865,7 @@ select.rsvpList{
   width:100%;
   padding:8px;
 }
-// .guestGroup:before{
-//     content: '▲';
-//     display: block;
-//     position: absolute;
-//     right: 8px;
-//     top: 0;
-//     transform: translateY(-50%);
-//     color:black;
-// }
-// .guestGroup:after{
-//     content: '▼';
-//     display: block;
-//     position: absolute;
-//     right: 8px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     color:black;
-// }
-// .attendingGroup:before{
-//     content: '▲';
-//     display: block;
-//     position: absolute;
-//     right: 8px;
-//     top: 0;
-//     transform: translateY(-50%);
-//     color:black;
-// }
-// .attendingGroup:after{
-//     content: '▼';
-//     display: block;
-//     position: absolute;
-//     right: 8px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     color:black;
-// }
+
 
 input[type="submit"]{
   background: #212121;
@@ -973,8 +943,22 @@ i.aboutHeartForm{
       text-align: center;
 }
 
+  /* =============================================================================
+                  Ham Menu Styles
+   ========================================================================== */
+
+// .hamMenu{
+//   opacity: 0;
+//   display: none;
+// }
+.hamVisible{
+  opacity: 1;
+}
+
+// css loves anna
+// anna maybe likes css
+
+
 // Media queries 
 
 @import 'mq';
-
-

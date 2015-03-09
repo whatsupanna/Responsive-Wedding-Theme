@@ -39,7 +39,7 @@
         <i class="fa fa-heart"></i>
         <span class="line line2"></span>
       </p>
-      <p class="dateTag">July 23rd 2014</p>
+      <p class="dateTag">July 23rd 2015</p>
     </div>
 
 
@@ -53,21 +53,29 @@
 
 
     <div class="container headerBox clearfix">
-    <div class="logoHead">
-        <h1>
-          <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-            <?php bloginfo( 'name' ); ?>
-          </a>
-        </h1>
+    <div class="logoWrapper">
+        <div class="logoHead">
+            <h1>
+              <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+                <?php bloginfo( 'name' ); ?>
+              </a>
+            </h1>
+        </div>
+      <!-- end of logoHead -->
+
+      <div class="hamburger">
+        <span class="hamMenu">☰</span>
+      </div>
+
+        <nav class='nav'>
+          <?php wp_nav_menu( array(
+            'container' => false,
+            'container_id' => 'nav',
+            'menu' => 'main'
+          )); ?>
+        </nav>
     </div>
-    <!-- end of logoHead -->
-    <nav class='nav'>
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'container_id' => 'nav',
-        'menu' => 'main'
-      )); ?>
-    </nav>
+    <!-- end of logoWrapper -->
   </div> <!-- /.container -->
 </header><!--/.header-->
 

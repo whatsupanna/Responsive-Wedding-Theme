@@ -6,7 +6,17 @@ $(function(){
     cssEase: 'linear'
   }).slick('slickPlay');
 
-  $('#clock').countdown('2015/04/23', function(event) {
+
+     var hamburger = function() {
+  		$('.hamMenu').on('click',function(e) {
+  			e.preventDefault();
+  			$('.nav').toggleClass('navOpen');
+  			console.log('hello');
+  		});
+     };
+
+
+  $('#clock').countdown('2015/07/17', function(event) {
      var $this = $(this).html(event.strftime(''
        + '<div class="clockDetails"> <span class="detailNumber">%-m</span><span class="detailLabel"> months</span></div>'
        + '<div class="clockDetails"> <span class="detailNumber">%-d</span><span class="detailLabel"> days</span></div>'
@@ -14,6 +24,8 @@ $(function(){
        + '<div class="clockDetails"> <span class="detailNumber">%-M</span><span class="detailLabel"> minutes</span></div>'
        + '<div class="clockDetails"> <span class="detailNumber">%-S</span><span class="detailLabel"> seconds</span></div>'));
    });
+
+
 
 
    window.isScrolledIntoView = function($elem) {
@@ -35,7 +47,7 @@ $(function(){
   		// cache the current box
   		var $el = $(this);
 	  	if(isScrolledIntoView($el)) {
-	  		$el.addClass('visible').fadeIn(200);
+	  		$el.addClass('visible');
 	  	}
 
   	});
@@ -147,12 +159,8 @@ $(function(){
   			}
   			google.maps.event.addDomListener(window, 'load', initialize);
   	
-
-
-
-
-
-
+// when window size equals this, add this class,
+//on click, fade in, show and hide 
 
 
 
