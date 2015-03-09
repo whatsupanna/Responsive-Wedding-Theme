@@ -1053,6 +1053,14 @@ i.aboutHeartForm {
       padding: 20px;
       width: 100%;
       transition: all 0.5s ease; }
+  .nav.navOpen {
+    height: auto;
+    padding: 30px; }
+    .nav.navOpen ul.menu li {
+      display: block;
+      padding: 20px;
+      width: 100%;
+      transition: all 0.5s ease; }
   .logoHead {
     width: 100%; }
     .logoHead a {
@@ -1071,9 +1079,8 @@ i.aboutHeartForm {
     border: 1px solid white;
     padding: 0 15px;
     border-radius: 5px;
-    transition: all 0.5s ease; }
-  .hamMenu:hover {
-    color: black; } }
+    transition: all 0.5s ease;
+    text-decoration: none; } }
 
 @media (max-width: 800px) {
   #clock {

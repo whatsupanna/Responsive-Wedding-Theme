@@ -64,7 +64,7 @@
       <!-- end of logoHead -->
 
       <div class="hamburger">
-        <span class="hamMenu">☰</span>
+        <a href="#" class="hamMenu">☰</a>
       </div>
 
         <nav class='nav'>
